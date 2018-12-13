@@ -10,24 +10,29 @@
 
 <body>
     <div class="container">
-       <h1>Welcome to the most accurate weather site!</h1>
-       <h2>Type any city and find out!</h2>
-       
+        <h1>Welcome to the most accurate weather site!</h1>
+        <h2>Type any city and find out!</h2>
+
         <fieldset>
             <form action="/" method="post">
                 <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
                 <input type="submit" class="ghost-button" value="Get Weather">
             </form>
             <% if(weather !== null){ %>
-            <p>
-                <%= weather %>
-            </p>
-            <% } %>
+            <div class="bgimage">
+                <p>
+                    <%= name %>
+                </p>
+                <p>
+                    <%= weather %>
+                </p>
+                <% } %>
 
-            <% if(error !== null){ %>
-            <p>
-                <%= error %>
-            </p>
+                <% if(error !== null){ %>
+                <p>
+                    <%= error %>
+                </p>
+            </div>
             <% } %>
         </fieldset>
     </div>

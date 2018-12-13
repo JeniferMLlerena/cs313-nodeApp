@@ -54,8 +54,7 @@ p {
     outline: none;
     width: 100%;
     box-sizing: border-box;
-    color: #4b545f;
-    background: #fff;
+    color: #306A34;
     font-family: Open Sans, Verdana;
     padding: 10px 15px;
     margin: 30px 0px;
@@ -67,12 +66,13 @@ p {
 }
 
 .ghost-button {
-    background-color: transparent;
-    border: 2px solid #ddd;
+    background-color: #23BA79;
+    border: 2px solid #21865A;
     padding: 10px 30px;
     width: 100%;
     min-width: 350px;
     transition: all 0.1s ease-in-out;
+    font-weight: bolder;
 }
 
 .ghost-button:hover {
@@ -80,5 +80,9 @@ p {
 }
 
 p {
-    color: #E64A19;
+    color: #243F26;
+}
+
+.bgimage{
+    background-color: #92C195;
 }

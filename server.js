@@ -36,9 +36,10 @@ app.post('/', function (req, res) {
                     error: 'Error, please try again'
                 });
             } else {
-                let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}!`;
-                
+                let nameText = `${weather.name}`;
+                let weatherText = `It's ${weather.main.temp}&deg;F degrees in ${weather.name}!`;
                 res.render('index', {
+                    name: nameText,
                     weather: weatherText,
                     error: null
                 });
