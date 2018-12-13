@@ -37,7 +37,7 @@ app.post('/', function (req, res) {
                 });
             } else {
                 let nameText = `${weather.name}`;
-                let weatherText = `It's ${weather.main.temp}&deg;F degrees in ${weather.name}!`;
+                let weatherText = `It's ${weather.main.temp}ºF degrees in ${weather.name}!`;
                 res.render('index', {
                     name: nameText,
                     weather: weatherText,
